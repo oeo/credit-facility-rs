@@ -1,0 +1,59 @@
+[package]
+name = "credit-facility-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rust_decimal = { version = "1.35", features = ["serde-with-str"] }
+rust_decimal_macros = "1.35"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.8", features = ["v4", "serde"] }
+thiserror = "1.0"
+hourglass-rs = "0.1.1"
+
+# new clean examples
+[[example]]
+name = "00_quick_start"
+path = "examples/00_quick_start.rs"
+
+[[example]]
+name = "01_basic_usage"
+path = "examples/01_basic_usage.rs"
+
+[[example]]
+name = "02_time_control"
+path = "examples/02_time_control.rs"
+
+[[example]]
+name = "03_facility_types"
+path = "examples/03_facility_types.rs"
+
+[[example]]
+name = "04_shared_time"
+path = "examples/04_shared_time.rs"
+
+[[example]]
+name = "05_json_state"
+path = "examples/05_json_state.rs"
+
+[[example]]
+name = "06_lifecycle"
+path = "examples/06_lifecycle.rs"
+
+[[example]]
+name = "07_bitcoin_loan"
+path = "examples/07_bitcoin_loan.rs"
+
+[[example]]
+name = "08_revolving_credit"
+path = "examples/08_revolving_credit.rs"
+
+[[example]]
+name = "09_overdraft"
+path = "examples/09_overdraft.rs"
+
+[[example]]
+name = "10_status_test"
+path = "examples/10_status_test.rs"
