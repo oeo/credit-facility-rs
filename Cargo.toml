@@ -2,6 +2,8 @@
 name = "credit-facility-rs"
 version = "0.1.0"
 edition = "2021"
+description = "A rust library for modeling credit facilities with time-aware calculations"
+license = "MIT"
 
 [dependencies]
 rust_decimal = { version = "1.35", features = ["serde-with-str"] }
